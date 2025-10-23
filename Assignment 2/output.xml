@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on linux)" generated="2025-10-23T19:07:38.869071" rpa="false" schemaversion="5">
+<suite id="s1" name="Assignment 2" source="/home/ual1/Coding/KBTU/SoftwareTesting/Practices/Assignment 2">
+<suite id="s1-s1" name="testCases" source="/home/ual1/Coding/KBTU/SoftwareTesting/Practices/Assignment 2/testCases">
+<suite id="s1-s1-s1" name="Test" source="/home/ual1/Coding/KBTU/SoftwareTesting/Practices/Assignment 2/testCases/test.robot">
+<test id="s1-s1-s1-t1" name="DEMOBLAZE_TEST" line="13">
+<kw name="Sign Up" owner="resources">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-23T19:07:39.060774" level="INFO">Opening browser 'Chrome' to base url 'https://www.demoblaze.com/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-23T19:07:39.060450" elapsed="8.916380"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${signUpButton}</arg>
+<arg>timeout=100</arg>
+<arg>error=signUpButtonNotFound</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-23T19:07:47.977235" elapsed="0.027342"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T19:07:58.005654" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T19:07:48.004966" elapsed="10.001052"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T19:07:58.007153" level="INFO">Clicking element '//*[@id="signin2"]'.</msg>
+<msg time="2025-10-23T19:07:59.368602" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T19:07:59.368912" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="signin2" data-toggle="modal" data-target="#signInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (363, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="iphone1.jpg" alt="Third slide"&gt;
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x561066291fea &lt;unknown&gt;
+#1 0x561065d0fd06 &lt;unknown&gt;
+#2 0x561065d68dac &lt;unknown&gt;
+#3 0x561065d66c2d &lt;unknown&gt;
+#4 0x561065d64292 &lt;unknown&gt;
+#5 0x561065d639a0 &lt;unknown&gt;
+#6 0x561065d5616b &lt;unknown&gt;
+#7 0x561065d87e12 &lt;unknown&gt;
+#8 0x561065d55ae7 &lt;unknown&gt;
+#9 0x561065d87fde &lt;unknown&gt;
+#10 0x561065dadb3b &lt;unknown&gt;
+#11 0x561065d87be3 &lt;unknown&gt;
+#12 0x561065d542d2 &lt;unknown&gt;
+#13 0x561065d54f91 &lt;unknown&gt;
+#14 0x5610662559e8 &lt;unknown&gt;
+#15 0x56106625984f &lt;unknown&gt;
+#16 0x56106623cec9 &lt;unknown&gt;
+#17 0x56106625a3f5 &lt;unknown&gt;
+#18 0x56106622274f &lt;unknown&gt;
+#19 0x56106627ecc8 &lt;unknown&gt;
+#20 0x56106627eea3 &lt;unknown&gt;
+#21 0x561066290f83 &lt;unknown&gt;
+#22 0x7fb828253f54 start_thread
+#23 0x7fb8282d732c __clone3
+</msg>
+<arg>${signUpButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-10-23T19:07:58.006506" elapsed="1.368130">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="signin2" data-toggle="modal" data-target="#signInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (363, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="iphone1.jpg" alt="Third slide"&gt;
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x561066291fea &lt;unknown&gt;
+#1 0x561065d0fd06 &lt;unknown&gt;
+#2 0x561065d68dac &lt;unknown&gt;
+#3 0x561065d66c2d &lt;unknown&gt;
+#4 0x561065d64292 &lt;unknown&gt;
+#5 0x561065d639a0 &lt;unknown&gt;
+#6 0x561065d5616b &lt;unknown&gt;
+#7 0x561065d87e12 &lt;unknown&gt;
+#8 0x561065d55ae7 &lt;unknown&gt;
+#9 0x561065d87fde &lt;unknown&gt;
+#10 0x561065dadb3b &lt;unknown&gt;
+#11 0x561065d87be3 &lt;unknown&gt;
+#12 0x561065d542d2 &lt;unknown&gt;
+#13 0x561065d54f91 &lt;unknown&gt;
+#14 0x5610662559e8 &lt;unknown&gt;
+#15 0x56106625984f &lt;unknown&gt;
+#16 0x56106623cec9 &lt;unknown&gt;
+#17 0x56106625a3f5 &lt;unknown&gt;
+#18 0x56106622274f &lt;unknown&gt;
+#19 0x56106627ecc8 &lt;unknown&gt;
+#20 0x56106627eea3 &lt;unknown&gt;
+#21 0x561066290f83 &lt;unknown&gt;
+#22 0x7fb828253f54 start_thread
+#23 0x7fb8282d732c __clone3
+</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${signUpUsernameField}</arg>
+<arg>timeout=100</arg>
+<arg>error=usernameField</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.374981" elapsed="0.000064"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.375228" elapsed="0.000046"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${signUpUsernameField}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.375415" elapsed="0.000037"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>${signUpPasswordField}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.375585" elapsed="0.000036"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.375746" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${signUpFromSubmitButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.375903" elapsed="0.000030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-23T19:07:59.376034" elapsed="0.000031"/>
+</kw>
+<status status="FAIL" start="2025-10-23T19:07:39.059643" elapsed="20.316641">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="signin2" data-toggle="modal" data-target="#signInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (363, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="iphone1.jpg" alt="Third slide"&gt;
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x561066291fea &lt;unknown&gt;
+#1 0x561065d0fd06 &lt;unknown&gt;
+#2 0x561065d68dac &lt;unknown&gt;
+#3 0x561065d66c2d &lt;unknown&gt;
+#4 0x561065d64292 &lt;unknown&gt;
+#5 0x561065d639a0 &lt;unknown&gt;
+#6 0x561065d5616b &lt;unknown&gt;
+#7 0x561065d87e12 &lt;unknown&gt;
+#8 0x561065d55ae7 &lt;unknown&gt;
+#9 0x561065d87fde &lt;unknown&gt;
+#10 0x561065dadb3b &lt;unknown&gt;
+#11 0x561065d87be3 &lt;unknown&gt;
+#12 0x561065d542d2 &lt;unknown&gt;
+#13 0x561065d54f91 &lt;unknown&gt;
+#14 0x5610662559e8 &lt;unknown&gt;
+#15 0x56106625984f &lt;unknown&gt;
+#16 0x56106623cec9 &lt;unknown&gt;
+#17 0x56106625a3f5 &lt;unknown&gt;
+#18 0x56106622274f &lt;unknown&gt;
+#19 0x56106627ecc8 &lt;unknown&gt;
+#20 0x56106627eea3 &lt;unknown&gt;
+#21 0x561066290f83 &lt;unknown&gt;
+#22 0x7fb828253f54 start_thread
+#23 0x7fb8282d732c __clone3
+</status>
+</kw>
+<kw name="Log In" owner="resources">
+<status status="NOT RUN" start="2025-10-23T19:07:59.376706" elapsed="0.000058"/>
+</kw>
+<status status="FAIL" start="2025-10-23T19:07:39.058857" elapsed="20.318253">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="nav-link" href="#" id="signin2" data-toggle="modal" data-target="#signInModal" style="display: block;"&gt;...&lt;/a&gt; is not clickable at point (363, 86). Other element would receive the click: &lt;img class="d-block img-fluid" src="iphone1.jpg" alt="Third slide"&gt;
+  (Session info: chrome=141.0.7390.107); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x561066291fea &lt;unknown&gt;
+#1 0x561065d0fd06 &lt;unknown&gt;
+#2 0x561065d68dac &lt;unknown&gt;
+#3 0x561065d66c2d &lt;unknown&gt;
+#4 0x561065d64292 &lt;unknown&gt;
+#5 0x561065d639a0 &lt;unknown&gt;
+#6 0x561065d5616b &lt;unknown&gt;
+#7 0x561065d87e12 &lt;unknown&gt;
+#8 0x561065d55ae7 &lt;unknown&gt;
+#9 0x561065d87fde &lt;unknown&gt;
+#10 0x561065dadb3b &lt;unknown&gt;
+#11 0x561065d87be3 &lt;unknown&gt;
+#12 0x561065d542d2 &lt;unknown&gt;
+#13 0x561065d54f91 &lt;unknown&gt;
+#14 0x5610662559e8 &lt;unknown&gt;
+#15 0x56106625984f &lt;unknown&gt;
+#16 0x56106623cec9 &lt;unknown&gt;
+#17 0x56106625a3f5 &lt;unknown&gt;
+#18 0x56106622274f &lt;unknown&gt;
+#19 0x56106627ecc8 &lt;unknown&gt;
+#20 0x56106627eea3 &lt;unknown&gt;
+#21 0x561066290f83 &lt;unknown&gt;
+#22 0x7fb828253f54 start_thread
+#23 0x7fb8282d732c __clone3
+</status>
+</test>
+<kw name="Close Browser" owner="resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-10-23T19:07:59.378309" elapsed="0.076443"/>
+</kw>
+<status status="PASS" start="2025-10-23T19:07:59.377976" elapsed="0.076951"/>
+</kw>
+<status status="FAIL" start="2025-10-23T19:07:38.895168" elapsed="20.559817"/>
+</suite>
+<status status="FAIL" start="2025-10-23T19:07:38.894146" elapsed="20.561606"/>
+</suite>
+<status status="FAIL" start="2025-10-23T19:07:38.869966" elapsed="20.586222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Assignment 2" id="s1" pass="0" fail="1" skip="0">Assignment 2</stat>
+<stat name="testCases" id="s1-s1" pass="0" fail="1" skip="0">Assignment 2.testCases</stat>
+<stat name="Test" id="s1-s1-s1" pass="0" fail="1" skip="0">Assignment 2.testCases.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
