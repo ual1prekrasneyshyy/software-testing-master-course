@@ -13,3 +13,6 @@ Suite Teardown    Close Browser
 DEMOBLAZE_TEST
     Sign Up
     Log In
+    Log Out
+    Add Item To The Cart
+    Make An Order And Payment

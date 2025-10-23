@@ -46,8 +46,8 @@ Preconditions:
 3. Login to your account (See TEST_CASE_2)
 
 Steps:
-1. Choose a category of items in the menu on the left side of the page
-2. Click to the one item, for example "Nokia lumia 1520"
+1. Choose a category of items in the menu on the left side of the page, for example, "Phones"
+2. Click to the one item, for example, "Nokia lumia 1520"
 3. Click to the "Add to cart" button
 
 
@@ -59,6 +59,7 @@ Preconditions:
 1. Open browser
 2. Insert to the browser address bar the following link: https://www.demoblaze.com/
 3. Login to your account (See TEST_CASE_2)
+4. Item has already been added to the cart
 
 Steps:
 1. Click to the "Cart" link in the top center corner of the page
