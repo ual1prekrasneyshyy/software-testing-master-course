@@ -1,4 +1,6 @@
-username = 'uali_amangaliyev_00'
+username1 = 'uali_amangaliyev_704'
+username2 = 'uali_amangaliyev_705'
+username3 = 'uali_amangaliyev_706'
 password = 'kaz07-m38'
 
 baseUrl = 'https://www.demoblaze.com/'

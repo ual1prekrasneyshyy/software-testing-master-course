@@ -3,30 +3,36 @@ Library    SeleniumLibrary
 Variables   ./locators.py
 Variables   ./testData.py
 
+
+*** Variables ***
+${BROWSER}    Chrome
+${USERNAME_VARIABLE}    ${CHROME_USERNAME}
+
+
 *** Keywords ***
 Sign Up
-    Open Browser    ${baseUrl}      Chrome
+    Open Browser    ${baseUrl}      ${BROWSER}
     Maximize Browser Window
     Wait until page contains element    ${signUpButton}     timeout=100     error=signUpButtonNotFound
     Sleep   3s
     Click Element   ${signUpButton}
     Wait until page contains element    ${signUpUsernameField}     timeout=100     error=usernameFieldNotFound
     Sleep   3s
-    Input Text      ${signUpUsernameField}      ${username}
+    Input Text      ${signUpUsernameField}      ${USERNAME_VARIABLE}
     Input Password      ${signUpPasswordField}      ${password}
     Sleep   3s
     Click Element   ${signUpFromSubmitButton}
     Sleep   2s
 
 Log In
-    Open Browser    ${baseUrl}      Chrome
+    Open Browser    ${baseUrl}      ${BROWSER}
     Maximize Browser Window
     Wait until page contains element    ${loginButton}     timeout=100     error=loginButtonNotFound
     Sleep   3s
     Click Element   ${loginButton}
     Wait until page contains element    ${signUpUsernameField}     timeout=100     error=usernameFieldNotFound
     Sleep   3s
-    Input Text      ${loginUsernameField}      ${username}
+    Input Text      ${loginUsernameField}      ${USERNAME_VARIABLE}
     Input Password      ${loginPasswordField}      ${password}
     Sleep   3s
     Click Element   ${loginFormSubmitButton}
