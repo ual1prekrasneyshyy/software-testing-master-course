@@ -11,7 +11,7 @@ ${USERNAME_VARIABLE}    ${CHROME_USERNAME}
 
 *** Keywords ***
 Sign Up
-    Open Browser    ${baseUrl}      ${BROWSER}
+    Open Browser    ${baseUrl}      browser=${BROWSER}
     Maximize Browser Window
     Wait until page contains element    ${signUpButton}     timeout=100     error=signUpButtonNotFound
     Sleep   3s
@@ -25,7 +25,7 @@ Sign Up
     Sleep   2s
 
 Log In
-    Open Browser    ${baseUrl}      ${BROWSER}
+    Open Browser    ${baseUrl}      browser=${BROWSER}
     Maximize Browser Window
     Wait until page contains element    ${loginButton}     timeout=100     error=loginButtonNotFound
     Sleep   3s
