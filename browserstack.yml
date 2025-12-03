@@ -16,7 +16,7 @@ platforms:
 parallelsPerPlatform: 1
 browserstackLocal: false
 buildName: bstack-demo
-projectName: BrowserStack Sample
+projectName: BrowserStack+Jenkins
 CUSTOM_TAG_1: "You can set a custom Build Tag here"
 # Use CUSTOM_TAG_<N> and set more build tags as you need.
 networkLogs: true
